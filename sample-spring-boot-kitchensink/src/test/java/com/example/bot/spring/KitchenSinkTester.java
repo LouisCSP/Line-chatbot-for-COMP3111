@@ -63,7 +63,7 @@ public class KitchenSinkTester {
 	}
 	
 	@Test
-	public void testFound() throws Exception {
+	public void testFound1() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
@@ -76,7 +76,7 @@ public class KitchenSinkTester {
 	}
 	
 	@Test
-	public void testFound() throws Exception {
+	public void testFound2() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
@@ -89,7 +89,7 @@ public class KitchenSinkTester {
 	}
 
 	@Test
-	public void testFound() throws Exception {
+	public void testFound3() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
@@ -102,7 +102,7 @@ public class KitchenSinkTester {
 	}
 	
 	@Test
-	public void testFound() throws Exception {
+	public void testFound4() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
@@ -115,7 +115,7 @@ public class KitchenSinkTester {
 	}
 	
 	@Test
-	public void testFound() throws Exception {
+	public void testFound5() throws Exception {
 		boolean thrown = false;
 		String result = null;
 		try {
