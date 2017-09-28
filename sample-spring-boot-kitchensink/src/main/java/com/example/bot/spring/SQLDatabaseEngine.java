@@ -19,8 +19,8 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 		//return null;
 	   
 		String result = null;
-		BufferedReader br = null;
-		InputStreamReader isr = null;
+		//BufferedReader br = null;
+		//InputStreamReader isr = null;
 		Connection connection = getConnection();
 		PreparedStatement stmt = connection.prepareStatement("SELECT keyword,response from lab3");
 		ResultSet rs = stmt.executeQuery();
@@ -45,12 +45,12 @@ public class SQLDatabaseEngine extends DatabaseEngine {
 					stmt.close();
 				if(connection!=null)
 					connection.close();
-				if (br != null)
-					br.close();
-				if (isr != null)
-					isr.close();
-			} catch (IOException ex) {
-				log.info("IOException while closing file: {}", ex.toString());
+//				if (br != null)
+//					br.close();
+//				if (isr != null)
+//					isr.close();
+			} catch (SQLException e) {
+				log.info("SQLException while closing file: {}", e.toString());
 			}
 		}
 		if (result != null) {
